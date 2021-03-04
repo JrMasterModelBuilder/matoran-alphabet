@@ -1,7 +1,7 @@
 {
 	"name": "matoran-alphabet",
 	"description": "Package for drawing Matoran alphabet characters",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"keywords": [
 		"matoran",
 		"alphabet",
