@@ -19,11 +19,11 @@ Currently supports drawing multiple different character styles as SVG code.
 ## Basic Usage
 
 ```js
-import { CharactersRound, SvgEncoder } from "matoran-alphabet";
+import {CharactersRound, SvgEncoder} from 'matoran-alphabet';
 
 const characters = new CharactersRound();
 const svg = new SvgEncoder(characters);
-console.log(svg.encode("A"));
+console.log(svg.encode('A'));
 ```
 
 ## Characters Styles
@@ -52,10 +52,10 @@ The SVG code can be customized.
 
 ```js
 svg.header = '<?xml version="1.0" encoding="UTF-8"?>\n';
-svg.svgAttrs["xmlns:svg"] = "http://www.w3.org/2000/svg";
-svg.pathAttrs.stroke = "#808080";
-svg.prepend = "<g>";
-svg.append = "</g>";
+svg.svgAttrs['xmlns:svg'] = 'http://www.w3.org/2000/svg';
+svg.pathAttrs.stroke = '#808080';
+svg.prepend = '<g>';
+svg.append = '</g>';
 ```
 
 # Bugs

@@ -1,4 +1,4 @@
-import { Characters } from "./characters";
+import {Characters} from './characters';
 
 /**
  * Class for encoding characters to an SVG document.
@@ -12,32 +12,32 @@ export class SvgEncoder extends Object {
 	/**
 	 * Optionall header for the SVG code.
 	 */
-	public header = "";
+	public header = '';
 
 	/**
 	 * SVG document attributes, null and undefined skipped, others string cast.
 	 */
-	public svgAttrs: { [attr: string]: unknown } = {
-		xmlns: "http://www.w3.org/2000/svg",
+	public svgAttrs: {[attr: string]: unknown} = {
+		xmlns: 'http://www.w3.org/2000/svg'
 	};
 
 	/**
 	 * SVG document attributes, null and undefined skipped, others string cast.
 	 */
-	public pathAttrs: { [attr: string]: unknown } = {
-		fill: "none",
-		stroke: "#000",
+	public pathAttrs: {[attr: string]: unknown} = {
+		fill: 'none',
+		stroke: '#000'
 	};
 
 	/**
 	 * Code to prepend to SVG document.
 	 */
-	public prepend = "";
+	public prepend = '';
 
 	/**
 	 * Code to append to SVG document.
 	 */
-	public append = "";
+	public append = '';
 
 	/**
 	 * SvgEncoder constructor.
@@ -57,7 +57,7 @@ export class SvgEncoder extends Object {
 	 * @returns Encoded string.
 	 */
 	public entities(str: string) {
-		return str.replace(/[&'"<>]/g, (c) => `&#${c.charCodeAt(0)};`);
+		return str.replace(/[&'"<>]/g, c => `&#${c.charCodeAt(0)};`);
 	}
 
 	/**
@@ -70,8 +70,8 @@ export class SvgEncoder extends Object {
 	 */
 	public tag(
 		name: string,
-		attrs: Readonly<{ [attr: string]: unknown }> = {},
-		content: string | null = null,
+		attrs: Readonly<{[attr: string]: unknown}> = {},
+		content: string | null = null
 	) {
 		const a = Object.keys(attrs).reduce((a, p) => {
 			const v = attrs[p];
@@ -79,8 +79,8 @@ export class SvgEncoder extends Object {
 			return v == null
 				? a
 				: `${a} ${this.entities(p)}="${this.entities(String(v))}"`;
-		}, "");
-		const end = content === null ? "/>" : `>${content}</${name}>`;
+		}, '');
+		const end = content === null ? '/>' : `>${content}</${name}>`;
 		return `<${name}${a}${end}`;
 	}
 
@@ -94,17 +94,17 @@ export class SvgEncoder extends Object {
 	 */
 	public circle(cx: number, cy: number, r: number) {
 		return this.tag(
-			"circle",
+			'circle',
 			Object.assign(
 				{
 					// eslint-disable-next-line @typescript-eslint/naming-convention
-					"stroke-width": this.characters.stroke,
+					'stroke-width': this.characters.stroke,
 					r,
 					cx,
-					cy,
+					cy
 				},
-				this.pathAttrs,
-			),
+				this.pathAttrs
+			)
 		);
 	}
 
@@ -119,18 +119,18 @@ export class SvgEncoder extends Object {
 	 */
 	public line(x1: number, y1: number, x2: number, y2: number) {
 		return this.tag(
-			"line",
+			'line',
 			Object.assign(
 				{
 					// eslint-disable-next-line @typescript-eslint/naming-convention
-					"stroke-width": this.characters.stroke,
+					'stroke-width': this.characters.stroke,
 					x1,
 					y1,
 					x2,
-					y2,
+					y2
 				},
-				this.pathAttrs,
-			),
+				this.pathAttrs
+			)
 		);
 	}
 
@@ -141,23 +141,23 @@ export class SvgEncoder extends Object {
 	 * @returns Path tag.
 	 */
 	public path(path: readonly number[]) {
-		let d = "";
+		let d = '';
 		for (let i = 0; i < path.length; i += 2) {
 			const x = path[i];
 			// NaN, the only value not equal to self, closes path.
 			// eslint-disable-next-line no-self-compare
-			d += x === x ? `${i ? "L" : "M"}${x},${path[i + 1]}` : "z";
+			d += x === x ? `${i ? 'L' : 'M'}${x},${path[i + 1]}` : 'z';
 		}
 		return this.tag(
-			"path",
+			'path',
 			Object.assign(
 				{
 					// eslint-disable-next-line @typescript-eslint/naming-convention
-					"stroke-width": this.characters.stroke,
-					d,
+					'stroke-width': this.characters.stroke,
+					d
 				},
-				this.pathAttrs,
-			),
+				this.pathAttrs
+			)
 		);
 	}
 
@@ -185,23 +185,23 @@ export class SvgEncoder extends Object {
 	 * @returns SVG code or null if character is unknown.
 	 */
 	public encode(character: string) {
-		const { width, height } = this.characters;
+		const {width, height} = this.characters;
 		const els = this.characters.getCharacterElements(character);
 		return els
 			? this.header +
 					this.tag(
-						"svg",
+						'svg',
 						Object.assign(
 							{
 								width,
 								height,
-								viewBox: `0 0 ${width} ${height}`,
+								viewBox: `0 0 ${width} ${height}`
 							},
-							this.svgAttrs,
+							this.svgAttrs
 						),
 						this.prepend +
-							els.reduce((a, e) => a + this.element(e), "") +
-							this.append,
+							els.reduce((a, e) => a + this.element(e), '') +
+							this.append
 					)
 			: null;
 	}

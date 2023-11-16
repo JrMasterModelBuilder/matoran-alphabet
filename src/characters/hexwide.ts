@@ -1,4 +1,4 @@
-import { Characters } from "../characters";
+import {Characters} from '../characters';
 
 /**
  * Hex characters, wide style.
@@ -27,7 +27,7 @@ export class CharactersHexWide extends Characters {
 			-384,
 			-221.7,
 			-384,
-			NaN,
+			NaN
 		], // Ring: Outer
 		[0, 0, 64], // Ring: CC
 		[0, 256, 64], // Ring: CB
@@ -68,7 +68,7 @@ export class CharactersHexWide extends Characters {
 		[0, 160, 64], // Ring: Dash
 		[-80, -16, 80, -16], // Line: Dash
 		[0, -196, 332.5, -192], // Line: MT-RT
-		[0, 196, 332.5, 192], // Line: MB-RB
+		[0, 196, 332.5, 192] // Line: MB-RB
 		/* eslint-enable line-comment-position, no-inline-comments, no-multi-spaces */
 	];
 

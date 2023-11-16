@@ -1,3 +1,3 @@
-export * from "./characters";
-export * from "./characters/";
-export * from "./svgencoder";
+export * from './characters';
+export * from './characters/';
+export * from './svgencoder';

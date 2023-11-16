@@ -1,9 +1,9 @@
-parser: "@typescript-eslint/parser"
+parser: '@typescript-eslint/parser'
 
 plugins:
   - eslint-plugin-import
   - eslint-plugin-jsdoc
-  - "@typescript-eslint"
+  - '@typescript-eslint'
 
 parserOptions:
   ecmaVersion: 9
@@ -246,16 +246,16 @@ rules:
     - startLines: 1
 
   # TypeScript Simple:
-  "@typescript-eslint/array-type": error
-  "@typescript-eslint/consistent-type-assertions": error
-  "@typescript-eslint/consistent-type-definitions": error
-  "@typescript-eslint/explicit-member-accessibility":
+  '@typescript-eslint/array-type': error
+  '@typescript-eslint/consistent-type-assertions': error
+  '@typescript-eslint/consistent-type-definitions': error
+  '@typescript-eslint/explicit-member-accessibility':
     - error
     - overrides:
         constructors: no-public
-  "@typescript-eslint/func-call-spacing": error
-  "@typescript-eslint/member-delimiter-style": error
-  "@typescript-eslint/member-ordering":
+  '@typescript-eslint/func-call-spacing': error
+  '@typescript-eslint/member-delimiter-style': error
+  '@typescript-eslint/member-ordering':
     - error
     - default:
         - public-static-field
@@ -267,19 +267,19 @@ rules:
         - public-instance-method
         - protected-instance-method
         - private-instance-method
-  "@typescript-eslint/no-require-imports": error
-  "@typescript-eslint/no-unused-vars":
+  '@typescript-eslint/no-require-imports': error
+  '@typescript-eslint/no-unused-vars':
     - error
     - vars: all
       args: none
-  "@typescript-eslint/no-use-before-define":
+  '@typescript-eslint/no-use-before-define':
     - error
     - nofunc
-  "@typescript-eslint/prefer-for-of": error
-  "@typescript-eslint/prefer-function-type": error
-  "@typescript-eslint/unified-signatures": error
-  "@typescript-eslint/no-confusing-non-null-assertion": error
-  "@typescript-eslint/lines-around-comment":
+  '@typescript-eslint/prefer-for-of': error
+  '@typescript-eslint/prefer-function-type': error
+  '@typescript-eslint/unified-signatures': error
+  '@typescript-eslint/no-confusing-non-null-assertion': error
+  '@typescript-eslint/lines-around-comment':
     - error
     - beforeBlockComment: true
       allowBlockStart: true
@@ -291,16 +291,16 @@ rules:
       allowTypeStart: true
 
   # TypeScript Project:
-  "@typescript-eslint/no-unnecessary-qualifier": error
-  "@typescript-eslint/prefer-includes": error
-  "@typescript-eslint/prefer-readonly": error
-  "@typescript-eslint/prefer-string-starts-ends-with": error
-  "@typescript-eslint/promise-function-async": error
-  "@typescript-eslint/no-unnecessary-boolean-literal-compare":
+  '@typescript-eslint/no-unnecessary-qualifier': error
+  '@typescript-eslint/prefer-includes': error
+  '@typescript-eslint/prefer-readonly': error
+  '@typescript-eslint/prefer-string-starts-ends-with': error
+  '@typescript-eslint/promise-function-async': error
+  '@typescript-eslint/no-unnecessary-boolean-literal-compare':
     - error
     - allowComparingNullableBooleansToTrue: true
       allowComparingNullableBooleansToFalse: true
-  "@typescript-eslint/naming-convention":
+  '@typescript-eslint/naming-convention':
     - error
     - selector: default
       format:
@@ -439,48 +439,48 @@ rules:
 
 overrides:
   - files:
-      - "*.js"
-      - "*.jsx"
-      - "*.mjs"
-      - "*.mjsx"
-      - "*.ts"
-      - "*.tsx"
+      - '*.js'
+      - '*.jsx'
+      - '*.mjs'
+      - '*.mjsx'
+      - '*.ts'
+      - '*.tsx'
   - files:
-      - "*.js"
-      - "*.jsx"
-      - "*.mjs"
-      - "*.mjsx"
+      - '*.js'
+      - '*.jsx'
+      - '*.mjs'
+      - '*.mjsx'
     rules:
-      "@typescript-eslint/no-unsafe-assignment": off
-      "@typescript-eslint/no-unsafe-member-access": off
-      "@typescript-eslint/no-unsafe-call": off
-      "@typescript-eslint/no-unsafe-return": off
+      '@typescript-eslint/no-unsafe-assignment': off
+      '@typescript-eslint/no-unsafe-member-access': off
+      '@typescript-eslint/no-unsafe-call': off
+      '@typescript-eslint/no-unsafe-return': off
   - files:
-      - "*.ts"
-      - "*.tsx"
+      - '*.ts'
+      - '*.tsx'
     rules:
       jsdoc/no-types: warn
   - files:
-      - "*.test.js"
-      - "*.test.jsx"
-      - "*.test.mjs"
-      - "*.test.mjsx"
-      - "*.test.ts"
-      - "*.test.tsx"
-      - "*.spec.js"
-      - "*.spec.jsx"
-      - "*.spec.mjs"
-      - "*.spec.mjsx"
-      - "*.spec.ts"
-      - "*.spec.tsx"
+      - '*.test.js'
+      - '*.test.jsx'
+      - '*.test.mjs'
+      - '*.test.mjsx'
+      - '*.test.ts'
+      - '*.test.tsx'
+      - '*.spec.js'
+      - '*.spec.jsx'
+      - '*.spec.mjs'
+      - '*.spec.mjsx'
+      - '*.spec.ts'
+      - '*.spec.tsx'
     rules:
       no-void: off
       jsdoc/require-jsdoc: off
-      "@typescript-eslint/no-floating-promises":
+      '@typescript-eslint/no-floating-promises':
         - error
         - ignoreVoid: true
   - files:
-      - "babel.config.js"
+      - 'babel.config.js'
     rules:
       import/no-extraneous-dependencies:
         - error
@@ -488,20 +488,20 @@ overrides:
           optionalDependencies: false
           peerDependencies: false
       jsdoc/require-jsdoc: off
-      "@typescript-eslint/no-require-imports": off
-      "@typescript-eslint/no-var-requires": off
+      '@typescript-eslint/no-require-imports': off
+      '@typescript-eslint/no-var-requires': off
     parserOptions:
       sourceType: script
   - files:
-      - "bin/*.js"
+      - 'bin/*.js'
     rules:
       no-console: off
       no-prototype-builtins: off
       jsdoc/require-jsdoc: off
-      "@typescript-eslint/naming-convention": off
-      "@typescript-eslint/no-require-imports": off
-      "@typescript-eslint/no-var-requires": off
-      "@typescript-eslint/no-unsafe-argument": off
-      "@typescript-eslint/no-unsafe-call": off
-      "@typescript-eslint/no-unsafe-return": off
-      "@typescript-eslint/restrict-template-expressions": off
+      '@typescript-eslint/naming-convention': off
+      '@typescript-eslint/no-require-imports': off
+      '@typescript-eslint/no-var-requires': off
+      '@typescript-eslint/no-unsafe-argument': off
+      '@typescript-eslint/no-unsafe-call': off
+      '@typescript-eslint/no-unsafe-return': off
+      '@typescript-eslint/restrict-template-expressions': off

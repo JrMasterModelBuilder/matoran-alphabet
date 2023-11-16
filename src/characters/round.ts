@@ -1,4 +1,4 @@
-import { Characters } from "../characters";
+import {Characters} from '../characters';
 
 /**
  * Round characters.
@@ -54,7 +54,7 @@ export class CharactersRound extends Characters {
 		[0, 160, 64], // Ring: Dash
 		[-80, -16, 80, -16], // Line: Dash
 		[0, -192, 330, -192], // Line: MT-RT
-		[0, 192, 330, 192], // Line: MB-RB
+		[0, 192, 330, 192] // Line: MB-RB
 		/* eslint-enable line-comment-position, no-inline-comments, no-multi-spaces */
 	];
 

@@ -15,9 +15,9 @@ export abstract class Characters extends Object {
 	/**
 	 * Character and their elements encode bits.
 	 */
-	protected readonly _characters: { [c: string]: number | null } = {
+	protected readonly _characters: {[c: string]: number | null} = {
 		/* eslint-disable quote-props, key-spacing, @typescript-eslint/naming-convention */
-		" ": 0b00000000000000000000000000000000000000000,
+		' ': 0b00000000000000000000000000000000000000000,
 		A: 0b00000000000000000000000000000000000000101,
 		B: 0b00000000000000000000000000000000000001101,
 		C: 0b00000000000000000000000000000000000010001,
@@ -44,21 +44,21 @@ export abstract class Characters extends Object {
 		X: 0b00000000000000000000000011000000000000001,
 		Y: 0b00000000000000000000100001000000000000001,
 		Z: 0b00000000000000000000000010000000000000001,
-		"0": 0b00000000000000000000000000000000000000011,
-		"1": 0b00000000000000000100000000000000000000011,
-		"2": 0b00000000000000001100000000000000000000011,
-		"3": 0b00000000000011000100000000000000000000011,
-		"4": 0b00000000000000111100000000000000000000011,
-		"5": 0b00000000111100000100000000000000000000011,
-		"6": 0b00000000000000000010000000000000000000011,
-		"7": 0b00000001000000000010000000000000000000011,
-		"8": 0b00000011000000000010000000000000000000011,
-		"9": 0b00001101000000000010000000000000000000011,
-		".": 0b00000000000000000000000000000000000000010,
-		"-": 0b00110000000000000000000000000000000000000,
-		"\u00C6": 0b11000000000000000000000000000011000000001,
-		"\u00D8": 0b00000000000000000000000000100001000000001,
-		"\u00C5": 0b00000000000000000000000000100000000001001,
+		'0': 0b00000000000000000000000000000000000000011,
+		'1': 0b00000000000000000100000000000000000000011,
+		'2': 0b00000000000000001100000000000000000000011,
+		'3': 0b00000000000011000100000000000000000000011,
+		'4': 0b00000000000000111100000000000000000000011,
+		'5': 0b00000000111100000100000000000000000000011,
+		'6': 0b00000000000000000010000000000000000000011,
+		'7': 0b00000001000000000010000000000000000000011,
+		'8': 0b00000011000000000010000000000000000000011,
+		'9': 0b00001101000000000010000000000000000000011,
+		'.': 0b00000000000000000000000000000000000000010,
+		'-': 0b00110000000000000000000000000000000000000,
+		'\u00C6': 0b11000000000000000000000000000011000000001,
+		'\u00D8': 0b00000000000000000000000000100001000000001,
+		'\u00C5': 0b00000000000000000000000000100000000001001
 		/* eslint-enable quote-props, key-spacing, @typescript-eslint/naming-convention */
 	};
 
@@ -74,7 +74,7 @@ export abstract class Characters extends Object {
 		left: 0,
 		right: 0,
 		top: 0,
-		bottom: 0,
+		bottom: 0
 	};
 
 	/**
@@ -129,7 +129,7 @@ export abstract class Characters extends Object {
 	 */
 	public get width() {
 		return Math.ceil(
-			this.margin.left + this.characterWidth + this.margin.right,
+			this.margin.left + this.characterWidth + this.margin.right
 		);
 	}
 
@@ -140,7 +140,7 @@ export abstract class Characters extends Object {
 	 */
 	public get height() {
 		return Math.ceil(
-			this.margin.top + this.characterHeight + this.margin.bottom,
+			this.margin.top + this.characterHeight + this.margin.bottom
 		);
 	}
 
@@ -163,7 +163,7 @@ export abstract class Characters extends Object {
 	 */
 	public getCharacter(character: string) {
 		const c = character.toUpperCase();
-		const { _characters } = this;
+		const {_characters} = this;
 		return Object.prototype.hasOwnProperty.call(_characters, c)
 			? _characters[c]
 			: null;
@@ -181,7 +181,7 @@ export abstract class Characters extends Object {
 	 * @returns Element coordinates or null.
 	 */
 	public getElements(bits: number) {
-		const { _elements } = this;
+		const {_elements} = this;
 		const c = [this.centerX, this.centerY];
 		const r = [];
 		for (let i = 0; bits >= 1; bits /= 2, i++) {
@@ -190,10 +190,8 @@ export abstract class Characters extends Object {
 				const e = _elements[i];
 				r.push(
 					e.map((v, i) =>
-						this.round(
-							i === 2 && e.length === 3 ? v : v + c[i % 2],
-						),
-					),
+						this.round(i === 2 && e.length === 3 ? v : v + c[i % 2])
+					)
 				);
 			}
 		}
