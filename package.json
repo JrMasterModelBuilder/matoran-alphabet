@@ -23,9 +23,6 @@
 	"types": "dts/index.d.ts",
 	"module": "esm/index.mjs",
 	"sideEffects": false,
-	"bin": {
-		"shockpkg-icon-encoder": "./bin/icon-encoder.js"
-	},
 	"engines": {
 		"node": ">=18.12.0"
 	},
