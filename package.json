@@ -49,7 +49,10 @@
 		"all": "npm run clean && npm run build && npm run test && npm run lint && npm run formatted",
 		"prepack": "npm run clean && npm run build"
 	},
-	"repository": "https://github.com/JrMasterModelBuilder/matoran-alphabet.git",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JrMasterModelBuilder/matoran-alphabet.git"
+	},
 	"bugs": "https://github.com/JrMasterModelBuilder/matoran-alphabet/issues",
 	"author": "JrMasterModelBuilder",
 	"copyright": "Copyright (c) 2021-2023 JrMasterModelBuilder",
