@@ -5,11 +5,10 @@ Package for drawing Matoran alphabet characters
 [![npm](https://img.shields.io/npm/v/matoran-alphabet.svg)](https://npmjs.com/package/matoran-alphabet)
 [![node](https://img.shields.io/node/v/matoran-alphabet.svg)](https://nodejs.org)
 
-[![dependencies](https://img.shields.io/david/JrMasterModelBuilder/matoran-alphabet.svg)](https://david-dm.org/JrMasterModelBuilder/matoran-alphabet)
 [![size](https://packagephobia.now.sh/badge?p=matoran-alphabet)](https://packagephobia.now.sh/result?p=matoran-alphabet)
 [![downloads](https://img.shields.io/npm/dm/matoran-alphabet.svg)](https://npmcharts.com/compare/matoran-alphabet?minimal=true)
 
-[![Build Status](https://github.com/JrMasterModelBuilder/matoran-alphabet/workflows/main/badge.svg?branch=main)](https://github.com/JrMasterModelBuilder/matoran-alphabet/actions?query=workflow%3Amain+branch%3Amain)
+[![Build Status](https://github.com/JrMasterModelBuilder/matoran-alphabet/workflows/main/badge.svg)](https://github.com/JrMasterModelBuilder/matoran-alphabet/actions?query=workflow%3Amain+branch%3Amain)
 
 # Overview
 
