@@ -4,7 +4,7 @@
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
+# Icon?
 ehthumbs.db
 Thumbs.db
 
@@ -18,22 +18,32 @@ report.*.json
 yarn.lock
 .nvmrc
 
+# IDE config
+.vscode
+
 /package-lock.json
 /.gitattributes
 /.gitignore
 /.github
-/.babelrc
 /.editorconfig
 /.eslintignore
 /.eslintrc.yaml
+/.prettierrc.yaml
+/.prettierignore
+/babel.config.js
 /tsconfig.json
 /tsconfig.eslint.json
-/gulpfile.babel.ts
 /spec
 /src
 
-/lib/**/*.spec.d.ts
-/lib/**/*.spec.js
-/lib/**/*.spec.js.map
-/lib/**/*.spec.mjs
-/lib/**/*.spec.mjs.map
+/dts/**/*.test.d.ts
+/esm/**/*.test.mjs
+/esm/**/*.test.mjs.map
+/cjs/**/*.test.js
+/cjs/**/*.test.js.map
+
+/dts/**/*.spec.d.ts
+/esm/**/*.spec.mjs
+/esm/**/*.spec.mjs.map
+/cjs/**/*.spec.js
+/cjs/**/*.spec.js.map

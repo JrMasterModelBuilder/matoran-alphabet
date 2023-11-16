@@ -11,22 +11,20 @@ Package for drawing Matoran alphabet characters
 
 [![Build Status](https://github.com/JrMasterModelBuilder/matoran-alphabet/workflows/main/badge.svg?branch=main)](https://github.com/JrMasterModelBuilder/matoran-alphabet/actions?query=workflow%3Amain+branch%3Amain)
 
-
 # Overview
 
 Currently supports drawing multiple different character styles as SVG code.
-
 
 # Usage
 
 ## Basic Usage
 
 ```js
-import {CharactersRound, SvgEncoder} from 'matoran-alphabet';
+import { CharactersRound, SvgEncoder } from "matoran-alphabet";
 
 const characters = new CharactersRound();
 const svg = new SvgEncoder(characters);
-console.log(svg.encode('A'));
+console.log(svg.encode("A"));
 ```
 
 ## Characters Styles
@@ -55,21 +53,19 @@ The SVG code can be customized.
 
 ```js
 svg.header = '<?xml version="1.0" encoding="UTF-8"?>\n';
-svg.svgAttrs['xmlns:svg'] = 'http://www.w3.org/2000/svg';
-svg.pathAttrs.stroke = '#808080';
-svg.prepend = '<g>';
-svg.append = '</g>';
+svg.svgAttrs["xmlns:svg"] = "http://www.w3.org/2000/svg";
+svg.pathAttrs.stroke = "#808080";
+svg.prepend = "<g>";
+svg.append = "</g>";
 ```
-
 
 # Bugs
 
 If you find a bug or have compatibility issues, please open a ticket under issues section for this repository.
 
-
 # License
 
-Copyright (c) 2021 JrMasterModelBuilder
+Copyright (c) 2021-2023 JrMasterModelBuilder
 
 Licensed under the Mozilla Public License, v. 2.0.
 

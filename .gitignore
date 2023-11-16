@@ -4,7 +4,6 @@
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 
@@ -18,8 +17,9 @@ report.*.json
 yarn.lock
 
 # Build files
-/lib
-
+/dts
+/esm
+/cjs
 
 # Test files
 /spec/generated
