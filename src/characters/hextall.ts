@@ -13,7 +13,7 @@ export class CharactersHexTall extends Characters {
 	 * @inheritdoc
 	 */
 	protected _elements: (readonly number[])[] = [
-		/* eslint-disable line-comment-position, no-inline-comments, no-multi-spaces */
+		/* eslint-disable line-comment-position, no-inline-comments */
 		[
 			0,
 			-443,
@@ -70,7 +70,7 @@ export class CharactersHexTall extends Characters {
 		[-80, -16, 80, -16], // Line: Dash
 		[0, -196, 384, -196], // Line: MT-RT
 		[0, 196, 384, 196] // Line: MB-RB
-		/* eslint-enable line-comment-position, no-inline-comments, no-multi-spaces */
+		/* eslint-enable line-comment-position, no-inline-comments */
 	];
 
 	/**

@@ -16,7 +16,7 @@ export abstract class Characters extends Object {
 	 * Character and their elements encode bits.
 	 */
 	protected readonly _characters: {[c: string]: number | null} = {
-		/* eslint-disable quote-props, key-spacing, @typescript-eslint/naming-convention */
+		/* eslint-disable @typescript-eslint/naming-convention */
 		' ': 0b00000000000000000000000000000000000000000,
 		A: 0b00000000000000000000000000000000000000101,
 		B: 0b00000000000000000000000000000000000001101,
@@ -59,7 +59,7 @@ export abstract class Characters extends Object {
 		'\u00C6': 0b11000000000000000000000000000011000000001,
 		'\u00D8': 0b00000000000000000000000000100001000000001,
 		'\u00C5': 0b00000000000000000000000000100000000001001
-		/* eslint-enable quote-props, key-spacing, @typescript-eslint/naming-convention */
+		/* eslint-enable @typescript-eslint/naming-convention */
 	};
 
 	/**

@@ -13,7 +13,7 @@ export class CharactersRound extends Characters {
 	 * @inheritdoc
 	 */
 	protected _elements: (readonly number[])[] = [
-		/* eslint-disable line-comment-position, no-inline-comments, no-multi-spaces */
+		/* eslint-disable line-comment-position, no-inline-comments */
 		[0, 0, 384], // Ring: Outer
 		[0, 0, 64], // Ring: CC
 		[0, 256, 64], // Ring: CB
@@ -55,7 +55,7 @@ export class CharactersRound extends Characters {
 		[-80, -16, 80, -16], // Line: Dash
 		[0, -192, 330, -192], // Line: MT-RT
 		[0, 192, 330, 192] // Line: MB-RB
-		/* eslint-enable line-comment-position, no-inline-comments, no-multi-spaces */
+		/* eslint-enable line-comment-position, no-inline-comments */
 	];
 
 	/**
