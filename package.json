@@ -58,22 +58,22 @@
 	"copyright": "Copyright (c) 2021-2023 JrMasterModelBuilder",
 	"license": "MPL-2.0",
 	"devDependencies": {
-		"@babel/cli": "^7.23.0",
-		"@babel/core": "^7.23.3",
-		"@babel/preset-env": "^7.23.3",
-		"@babel/preset-typescript": "^7.23.3",
-		"@types/node": "^20.9.0",
+		"@babel/cli": "^7.24.8",
+		"@babel/core": "^7.25.2",
+		"@babel/preset-env": "^7.25.3",
+		"@babel/preset-typescript": "^7.24.7",
+		"@types/node": "^22.1.0",
 		"@typescript-eslint/eslint-plugin": "^6.11.0",
 		"@typescript-eslint/parser": "^6.11.0",
-		"babel-plugin-esm-resolver": "^2.3.2",
+		"babel-plugin-esm-resolver": "^3.0.0",
 		"babel-plugin-search-and-replace": "^1.1.1",
 		"eslint": "^8.53.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-import": "^2.29.0",
 		"eslint-plugin-jsdoc": "^46.9.0",
-		"prettier": "^3.1.0",
-		"rimraf": "^5.0.5",
+		"prettier": "^3.3.3",
+		"rimraf": "^6.0.1",
 		"source-map-support": "^0.5.21",
-		"typescript": "^5.2.2"
+		"typescript": "^5.5.4"
 	}
 }
