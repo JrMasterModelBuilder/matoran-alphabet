@@ -8,7 +8,7 @@ Package for drawing Matoran alphabet characters
 [![size](https://packagephobia.now.sh/badge?p=matoran-alphabet)](https://packagephobia.now.sh/result?p=matoran-alphabet)
 [![downloads](https://img.shields.io/npm/dm/matoran-alphabet.svg)](https://npmcharts.com/compare/matoran-alphabet?minimal=true)
 
-[![Build Status](https://github.com/JrMasterModelBuilder/matoran-alphabet/workflows/main/badge.svg)](https://github.com/JrMasterModelBuilder/matoran-alphabet/actions?query=workflow%3Amain+branch%3Amain)
+[![main](https://github.com/JrMasterModelBuilder/matoran-alphabet/actions/workflows/main.yml/badge.svg)](https://github.com/JrMasterModelBuilder/matoran-alphabet/actions/workflows/main.yml)
 
 # Overview
 
