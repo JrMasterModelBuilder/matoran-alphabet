@@ -62,18 +62,19 @@
 		"@babel/core": "^7.25.2",
 		"@babel/preset-env": "^7.25.3",
 		"@babel/preset-typescript": "^7.24.7",
+		"@eslint/js": "^9.8.0",
+		"@stylistic/eslint-plugin": "^2.6.1",
 		"@types/node": "^22.1.0",
-		"@typescript-eslint/eslint-plugin": "^6.11.0",
-		"@typescript-eslint/parser": "^6.11.0",
 		"babel-plugin-esm-resolver": "^3.0.0",
 		"babel-plugin-search-and-replace": "^1.1.1",
 		"eslint": "^8.53.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-import": "^2.29.0",
+		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-jsdoc": "^46.9.0",
+		"eslint-plugin-unicorn": "^55.0.0",
 		"prettier": "^3.3.3",
 		"rimraf": "^6.0.1",
 		"source-map-support": "^0.5.21",
-		"typescript": "^5.5.4"
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.0.1"
 	}
 }

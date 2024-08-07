@@ -57,6 +57,7 @@ void describe('svg/encoder', () => {
 					encoder.encode(char.toUpperCase())
 				);
 
+				// eslint-disable-next-line unicorn/prefer-code-point
 				const ord = char.charCodeAt(0);
 				const f = `${suffix}/${ord.toString(16).toUpperCase()}.svg`;
 				const data = encoder.encode(char);

@@ -57,7 +57,8 @@ export class SvgEncoder extends Object {
 	 * @returns Encoded string.
 	 */
 	public entities(str: string) {
-		return str.replace(/[&'"<>]/g, c => `&#${c.charCodeAt(0)};`);
+		// eslint-disable-next-line unicorn/prefer-code-point
+		return str.replace(/["&'<>]/g, c => `&#${c.charCodeAt(0)};`);
 	}
 
 	/**
@@ -73,6 +74,7 @@ export class SvgEncoder extends Object {
 		attrs: Readonly<{[attr: string]: unknown}> = {},
 		content: string | null = null
 	) {
+		// eslint-disable-next-line unicorn/no-array-reduce
 		const a = Object.keys(attrs).reduce((a, p) => {
 			const v = attrs[p];
 			// eslint-disable-next-line no-eq-null, eqeqeq

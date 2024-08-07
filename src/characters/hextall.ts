@@ -27,6 +27,7 @@ export class CharactersHexTall extends Characters {
 			221.7,
 			-384,
 			-221.7,
+			// eslint-disable-next-line unicorn/prefer-number-properties
 			NaN
 		], // Ring: Outer
 		[0, 0, 64], // Ring: CC
