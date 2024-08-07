@@ -3,11 +3,11 @@ import {strictEqual} from 'node:assert';
 import {dirname} from 'node:path';
 import {mkdir, writeFile} from 'node:fs/promises';
 
-import {Characters} from './characters';
-import {CharactersRound} from './characters/round';
-import {CharactersHexTall} from './characters/hextall';
-import {CharactersHexWide} from './characters/hexwide';
-import {SvgEncoder} from './svgencoder';
+import {Characters} from './characters.ts';
+import {CharactersRound} from './characters/round.ts';
+import {CharactersHexTall} from './characters/hextall.ts';
+import {CharactersHexWide} from './characters/hexwide.ts';
+import {SvgEncoder} from './svgencoder.ts';
 
 function* generate() {
 	const chars = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-\u00C6\u00D8\u00C5';

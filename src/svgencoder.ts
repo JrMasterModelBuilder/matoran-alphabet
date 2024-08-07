@@ -1,4 +1,4 @@
-import {Characters} from './characters';
+import {Characters} from './characters.ts';
 
 /**
  * Class for encoding characters to an SVG document.

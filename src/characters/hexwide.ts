@@ -1,4 +1,4 @@
-import {Characters} from '../characters';
+import {Characters} from '../characters.ts';
 
 /**
  * Hex characters, wide style.
