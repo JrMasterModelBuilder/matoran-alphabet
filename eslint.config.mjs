@@ -265,7 +265,6 @@ export default [
 					}
 				}
 			],
-			'jsdoc/lines-before-block': 'off',
 			'jsdoc/no-types': 'warn',
 			'jsdoc/require-description': 'warn',
 			'jsdoc/require-description-complete-sentence': [
